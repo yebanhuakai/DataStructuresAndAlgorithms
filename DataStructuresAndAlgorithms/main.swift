@@ -269,7 +269,7 @@ denseGraph.show()
 #endif
 
 //广度优先遍历
-#if true
+#if false
 
 let sparseGraph1 = SparseGraph(n: 13, directed: false)
 for tuple in G1 {
@@ -291,4 +291,18 @@ print("component2.count:", component2.count())
 
 #endif
 
+//路径
+#if true
+    
+let sparseGraph = SparseGraph(n: 7, directed: false)
+for tuple in G2 {
+    sparseGraph.addEdge(v: tuple.v1, w: tuple.v2)
+}
+sparseGraph.show()
+    
+let path = Path(G: sparseGraph, source: 0)
+    
+path?.showPath(w: 6)
+
+#endif
 

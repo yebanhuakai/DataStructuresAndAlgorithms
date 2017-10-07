@@ -57,7 +57,7 @@ func timeClac<T:Comparable>(fn:(inout [T])->(), arr:inout [T], funcName:String) 
 }
 
 //Stack，栈满足性质为后进先出
-class stack {
+class Stack {
     var stack:[AnyObject]
     
     init() {
@@ -87,7 +87,7 @@ class stack {
         return stack.removeLast()
     }
     
-    func peek() -> AnyObject? {
+    func top() -> AnyObject? {
         return stack.last
     }
     
@@ -123,7 +123,7 @@ class Queue {
         return queue.removeFirst()
     }
     
-    func peek() -> AnyObject? {
+    func top() -> AnyObject? {
         return queue.first
     }
     

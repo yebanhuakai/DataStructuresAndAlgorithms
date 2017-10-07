@@ -79,7 +79,6 @@ class DenseGraph:Graph {
     
     func show() {
         for i in 0..<n {
-//            print("i:", adjIterator(v: i))
             let w = g[i]
             var arr = [Int]()
             for hasEdge in w {
