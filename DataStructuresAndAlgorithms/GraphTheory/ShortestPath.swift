@@ -1,5 +1,5 @@
 //
-//  Path.swift
+//  ShortestPath.swift
 //  DataStructuresAndAlgorithms
 //
 //  Created by Shenry on 2017/10/7.
@@ -8,13 +8,14 @@
 
 import Foundation
 
-//计算路径
-class Path {
+//计算最短路径
+class ShortestPath {
     
     var source = 0 //起始点
     var G:Graph
     var visited:[Bool] //被访问过的定点
     var from:[Int] //每个点从哪来的，用来倒推路径
+    var ord:[Int] //source节点到每个节点的最短距离
     
     init?(G:Graph, source:Int) {
         
@@ -26,22 +27,37 @@ class Path {
         self.source = source
         visited = [Bool](repeatElement(false, count: G.V()))
         from = [Int](repeatElement(-1, count: G.V()))
+        ord = [Int](repeatElement(-1, count: G.V()))
 
-        //寻路算法
-        dfs(v: source)
-    }
-    
-    //depth first search
-    private func dfs(v:Int) {
-        visited[v] = true
-        let w = G.adjIterator(v: v)
+        let q = Queue()
+        //无向图最短优先路径
+        q.enqueue(object: source as AnyObject)
+        visited[source] = true
+        ord[source] = 0
         
-        for i in w {
-            if !visited[i] {
-                from[i] = v //i 均是从 v遍历过来的
-                dfs(v: i) //利用递归，如果该点没有被遍历过，就继续遍历该点的连接点
+        //广度优先遍历，层层遍历，用队列实现较为容易
+        while !q.isEmpty() {
+            let v = q.dequeue() as! Int
+            let adj = G.adjIterator(v: v)
+            for i in adj {
+                if !visited[i] {
+                    q.enqueue(object: i as AnyObject)
+                    visited[i] = true
+                    from[i] = v
+                    ord[i] = ord[v] + 1
+                }
             }
         }
+    }
+    
+    //返回source点到w点之间的最短路径
+    func length(w:Int) -> Int {
+        
+        guard w >= 0 && w < G.V() else {
+            return -1
+        }
+        
+        return ord[w]
     }
     
     func hasPath(w:Int) -> Bool {
@@ -78,5 +94,4 @@ class Path {
             }
         }
     }
-    
 }

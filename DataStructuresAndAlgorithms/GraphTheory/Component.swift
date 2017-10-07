@@ -32,13 +32,13 @@ class Component {
         return ccount
     }
     
-    //depth first search
+    //depth first search，深度优先遍历的特征就是直接到底
     private func dfs(v:Int) {
         visited[v] = true
         let w = G.adjIterator(v: v)
         id[v] = ccount //巧妙的用法，直接用当前的连通分量数标记被联通的一组顶点
         
-        for i in w {
+        for i in w { //注意，不能用索引，必须用w中的值
             if !visited[i] {
                 dfs(v: i) //利用递归，如果该点没有被遍历过，就继续遍历该点的连接点
             }

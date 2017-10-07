@@ -291,7 +291,7 @@ print("component2.count:", component2.count())
 
 #endif
 
-//路径
+//DFS vs BFS
 #if true
     
 let sparseGraph = SparseGraph(n: 7, directed: false)
@@ -301,8 +301,10 @@ for tuple in G2 {
 sparseGraph.show()
     
 let path = Path(G: sparseGraph, source: 0)
-    
 path?.showPath(w: 6)
-
+    
+let shortestPath = ShortestPath(G: sparseGraph, source: 0)
+shortestPath?.showPath(w: 6)
+    
 #endif
 

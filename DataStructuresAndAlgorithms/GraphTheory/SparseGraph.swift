@@ -70,7 +70,7 @@ class SparseGraph:Graph {
     
     func show() {
         for i in 0..<n {
-            print("i:", adjIterator(v: i))
+            print("\(i):", adjIterator(v: i))
         }
     }
 }
