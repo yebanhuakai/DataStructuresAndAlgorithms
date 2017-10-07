@@ -8,14 +8,6 @@
 
 import Foundation
 
-//print("Run Start", Date())
-//
-//for index in 1...127_000_000 {
-//    //谷歌查找Algorithm仅需0.67秒，我的mac需要10秒
-//}
-//
-//print("Run finish", Date())
-
 let count1_000_000 = 1_000_000
 let count500_000 = 500_000
 let count100_000 = 100_000

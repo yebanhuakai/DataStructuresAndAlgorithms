@@ -79,12 +79,4 @@ func __merge<T:Comparable>(arr:inout [T], l:Int, mid:Int, r:Int) {
     }
 }
 
-//var mergeArr = randomArr(count: 10000, rangeL: 0, rangeR: 10)
-//var mergeArr = randomNearlyOrderArr(count: 15, swapTimes: 7)
-//var mergeArr1 = mergeArr
-//var mergeArr2 = mergeArr
-//print(mergeArr[0...100])
-//timeClac(fn: insertionSort(arr:), arr: &mergeArr1, funcName: "⚠️InsertionSort")
-//print(mergeArr1[0...14])
-//timeClac(fn: mergeSort(arr:), arr: &mergeArr2, funcName: "⚠️MergeSort ")
-//print(mergeArr2[0...14])
+

@@ -58,6 +58,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		457B37EA1F88816800065474 /* GraphTheory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GraphTheory;
+			sourceTree = "<group>";
+		};
 		45F909CD1F7E4397002B7637 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +95,7 @@
 				457B37E41F8877B800065474 /* BinarySearch.swift */,
 				457B37E61F8877EF00065474 /* BinarySearchTree.swift */,
 				457B37E81F88785200065474 /* UnionFind.swift */,
+				457B37EA1F88816800065474 /* GraphTheory */,
 			);
 			path = DataStructuresAndAlgorithms;
 			sourceTree = "<group>";

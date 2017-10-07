@@ -12,7 +12,7 @@ import Foundation
 class MaxHeap<T:Comparable> {
     
     var count = 0
-    var data:[T]!
+    var data:[T]
     
     init(data:[T], count:Int) {
         self.data = Array(repeatElement(data[0], count: count + 1))
@@ -195,32 +195,6 @@ func heapSort2<T:Comparable>(arr:inout [T]) {
         j -= 1
     }
 }
-//let n = 16 //最大129，否则无法显示
-//var heapArr = randomArr(count: count1_000_000, rangeL: 0, rangeR: count1_000_000)
-//var heapArr1 = heapArr
-//var heapArr2 = heapArr
-//var heapArr3 = heapArr
 
-//for i in (1...n - 1).reversed() {
-//    maxHeap.insert(item: i)
-//}
-
-//for _ in 1..<n {
-//    maxHeap.insert(item: Int(arc4random() % 100))
-//}
-
-//maxHeap.testPrint()
-//while !maxHeap.isEmpty() {
-//    print(maxHeap.shiftDown())
-//}
-
-//timeClac(fn: heapSort2(arr:), arr: &heapArr1, funcName: "HeapSort2") //heapify过程O(n)级别,但需额外空间
-//print(heapArr1[0...49])
-//
-//timeClac(fn: quickSort3Way(arr:), arr: &heapArr2, funcName: "Quick3Sort")
-//print(heapArr2[0...49])
-//
-//timeClac(fn: heapSort(arr:), arr: &heapArr3, funcName: "HeapSort") //数组本地操作
-//print(heapArr3[0...49])
 
 

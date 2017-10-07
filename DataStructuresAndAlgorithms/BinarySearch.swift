@@ -46,10 +46,4 @@ func binarySearchRecursion<T:Comparable>(arr:[T], l:Int, r:Int, target:T) -> Int
     }
 }
 
-//var binarySearchArr = randomArr(count: 64, rangeL: 0, rangeR: 64)
-//quickSort3Way(arr: &binarySearchArr)
-//print(binarySearchArr)
-//let target = binarySearch(arr: binarySearchArr, n: binarySearchArr.count, target: 55)
-//print("Target is :", target)
-//let targetRe = binarySearchRecursion(arr: binarySearchArr, l: 0, r: binarySearchArr.count - 1, target: 55)
-//print("Recursion Target is :", targetRe)
+

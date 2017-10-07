@@ -330,14 +330,5 @@ class IndexMaxHeap<T:Comparable> {
     
 }
 
-//var indexHeapArr = randomArr(count: 64, rangeL: 0, rangeR: 99)
-//var indexMaxHeap = IndexMaxHeap<Int>(capacity: indexHeapArr.count)
-//
-//for i in 0..<indexHeapArr.count {
-//    indexMaxHeap.insert(i: i, item: indexHeapArr[i])
-//}
-//indexMaxHeap.testPrint(inMaxIndex: true)
-//print("\n\n\n")
-//indexMaxHeap.testPrint(inMaxIndex: false)
 
 //三叉堆和D叉堆。动态capacity扩容，增加2倍

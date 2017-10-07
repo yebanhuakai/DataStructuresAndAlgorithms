@@ -125,17 +125,5 @@ func __quickSort3Way<T:Comparable>(arr:inout [T], l:Int, r:Int) {
     __quickSort3Way(arr: &arr, l: gt, r: r)
 }
 
-//var quick3Arr = randomNearlyOrderArr(count: count1_000_000, swapTimes: 10)
-//var quick3Arr1 = quick3Arr
-//var quick3Arr2 = quick3Arr
-//var quick3Arr3 = quick3Arr
-//
-//timeClac(fn: quickSort(arr:), arr: &quick3Arr1, funcName: "QuickSort ")
-//print(quick3Arr1[0...49])
-//timeClac(fn: quickSort3Way(arr:), arr: &quick3Arr2, funcName: "Quick3Sort ")
-//print(quick3Arr2[0...49])
-//timeClac(fn: mergeSort(arr:), arr: &quick3Arr3, funcName: "MergeSort ")
-//print(quick3Arr3[0...49])
-
 //逆序对 ⭐️作业 （归并算法）
 //第n大元素 ⭐️作业 （快速排序算法）

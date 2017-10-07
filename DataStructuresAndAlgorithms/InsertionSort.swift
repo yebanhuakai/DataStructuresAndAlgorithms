@@ -42,24 +42,5 @@ func insertionSort2<T:Comparable>(arr:inout [T]) {
     }
 }
 
-//var insertArr = randomArr(count: 100, rangeL: 0, rangeR: 10) //插入排序对于范围小、连续度高的数组排序比选择更快
-//var arrCP1 = insertArr
-//var arrCP2 = insertArr
-//
-//timeClac(fn: selectionSort(arr:), arr: &arrCP1, funcName: "SelectionSort") //注意函数类型调用方法
-//timeClac(fn: insertionSort(arr:), arr: &arrCP1, funcName: "insertionSort1")
-//print(arrCP1[0...99])
-//timeClac(fn: insertionSort2(arr:), arr: &arrCP2, funcName: "insertionSort2")
-//print(arrCP2[0...99])
-
-
-//var newArr = randomNearlyOrderArr(count: count100_000, swapTimes: 10)
-//var newArr1 = newArr
-//var newArr2 = newArr
-//
-//timeClac(fn: selectionSort(arr:), arr: &newArr1, funcName: "SelectionSort") //注意函数类型调用方法
-//timeClac(fn: insertionSort(arr:), arr: &newArr2, funcName: "InsertionSort") //连续度高的数组插入更快，因为能提前终止循环
-//insertArr.sorted(by: <)
-
 //Bubble Sort ⭐️作业
 //Shell Sort ⭐️作业
