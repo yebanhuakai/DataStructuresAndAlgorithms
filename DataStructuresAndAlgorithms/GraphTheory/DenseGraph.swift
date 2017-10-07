@@ -69,7 +69,7 @@ class DenseGraph {
         var arr = [Int]()
         let w = g[v]
         for i in 0..<w.count {
-            if w[i] == true {
+            if w[i] {
                 arr.append(i)
             }
         }
@@ -77,4 +77,15 @@ class DenseGraph {
         return arr
     }
     
+    func show() {
+        for i in 0..<n {
+//            print("i:", adjIterator(v: i))
+            let w = g[i]
+            var arr = [Int]()
+            for hasEdge in w {
+                arr.append(hasEdge ? 1 : 0)
+            }
+            print(arr)
+        }
+    }
 }

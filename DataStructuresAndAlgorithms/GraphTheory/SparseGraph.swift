@@ -68,6 +68,10 @@ class SparseGraph {
         return g[v]
     }
     
-    
+    func show() {
+        for i in 0..<n {
+            print("i:", adjIterator(v: i))
+        }
+    }
 }
 

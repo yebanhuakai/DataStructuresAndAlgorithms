@@ -210,9 +210,12 @@ print("Union Find Eclipse time: ", seconds)
 //------------------------------♨️---------------------------------//
 // MARK: - 图论 Graph Theory
 
-#if true
+#if false
 
 let n = 20, m = 100
+    
+print("\nSparseGraph:")
+
 let sparseGraph = SparseGraph(n: n, directed: false)
 for _ in 0..<m {
     let a = Int(arc4random()) % n
@@ -238,6 +241,47 @@ for i in 0..<n {
     let w = denseGraph.adjIterator(v: i)
     print("\(i) :", w)
 }
+
+#endif
+
+#if true
+
+let G1:[(v1:Int, v2:Int)] = [
+    ( 0, 5),
+    ( 4, 3),
+    ( 0, 1),
+    (09,12),
+    ( 6, 4),
+    ( 5, 4),
+    ( 0, 2),
+    (11,12),
+    ( 9,10),
+    ( 0, 6),
+    ( 7, 8),
+    ( 9,11),
+    ( 5, 3)
+]
+    
+let n = 13
+    
+print("\nSparseGraph, AdjacencyLists:")
+
+let sparseGraph = SparseGraph(n: n, directed: false)
+for tuple in G1 {
+    sparseGraph.addEdge(v: tuple.v1, w: tuple.v2)
+}
+sparseGraph.show()
+    
+print("\nDenseGraph, AdjacencyMatrix:")
+
+let denseGraph = DenseGraph(n: n, directed: false)
+for tuple in G1 {
+    denseGraph.addEdge(v: tuple.v1, w: tuple.v2)
+}
+denseGraph.show()
     
 #endif
+
+
+
 
