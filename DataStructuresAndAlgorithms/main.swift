@@ -210,5 +210,34 @@ print("Union Find Eclipse time: ", seconds)
 //------------------------------♨️---------------------------------//
 // MARK: - 图论 Graph Theory
 
+#if true
 
+let n = 20, m = 100
+let sparseGraph = SparseGraph(n: n, directed: false)
+for _ in 0..<m {
+    let a = Int(arc4random()) % n
+    let b = Int(arc4random()) % n
+    sparseGraph.addEdge(v: a, w: b)
+}
+    
+for i in 0..<n {
+    let w = sparseGraph.adjIterator(v: i)
+    print("\(i) :", w)
+}
+    
+print("\nDenseGraph:")
+    
+let denseGraph = DenseGraph(n: n, directed: false)
+for _ in 0..<m {
+    let a = Int(arc4random()) % n
+    let b = Int(arc4random()) % n
+    denseGraph.addEdge(v: a, w: b)
+}
+    
+for i in 0..<n {
+    let w = denseGraph.adjIterator(v: i)
+    print("\(i) :", w)
+}
+    
+#endif
 
