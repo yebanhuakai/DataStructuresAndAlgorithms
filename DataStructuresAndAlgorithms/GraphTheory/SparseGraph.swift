@@ -15,7 +15,7 @@ import Foundation
  3 : 1
  */
 //稀疏图-邻接表
-class SparseGraph {
+class SparseGraph:Graph {
     
     private var n = 0 //顶点
     private var m = 0 //边

@@ -16,7 +16,7 @@ import Foundation
  3 t t t t
  */
 //稠密图-邻接矩阵
-class DenseGraph {
+class DenseGraph:Graph {
    
     var n = 0 //顶点
     var m = 0 //边

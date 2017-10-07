@@ -244,29 +244,15 @@ for i in 0..<n {
 
 #endif
 
-#if true
+//图的完全遍历
 
-let G1:[(v1:Int, v2:Int)] = [
-    ( 0, 5),
-    ( 4, 3),
-    ( 0, 1),
-    (09,12),
-    ( 6, 4),
-    ( 5, 4),
-    ( 0, 2),
-    (11,12),
-    ( 9,10),
-    ( 0, 6),
-    ( 7, 8),
-    ( 9,11),
-    ( 5, 3)
-]
+#if false
     
 let n = 13
     
 print("\nSparseGraph, AdjacencyLists:")
 
-let sparseGraph = SparseGraph(n: n, directed: false)
+let sparseGraph = SparseGraph(n: 13, directed: false)
 for tuple in G1 {
     sparseGraph.addEdge(v: tuple.v1, w: tuple.v2)
 }
@@ -274,7 +260,7 @@ sparseGraph.show()
     
 print("\nDenseGraph, AdjacencyMatrix:")
 
-let denseGraph = DenseGraph(n: n, directed: false)
+let denseGraph = DenseGraph(n: 7, directed: false)
 for tuple in G1 {
     denseGraph.addEdge(v: tuple.v1, w: tuple.v2)
 }
@@ -282,6 +268,27 @@ denseGraph.show()
     
 #endif
 
+//广度优先遍历
+#if true
 
+let sparseGraph1 = SparseGraph(n: 13, directed: false)
+for tuple in G1 {
+    sparseGraph1.addEdge(v: tuple.v1, w: tuple.v2)
+}
+    
+let component1 = Component(G: sparseGraph1)
+    
+print("component1.count:", component1.count())
+    
+let sparseGraph2 = SparseGraph(n: 7, directed: false)
+for tuple in G2 {
+    sparseGraph2.addEdge(v: tuple.v1, w: tuple.v2)
+}
+    
+let component2 = Component(G: sparseGraph2)
+
+print("component2.count:", component2.count())
+
+#endif
 
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45121A131F88FF52005FA14E /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45121A121F88FF52005FA14E /* Graph.swift */; };
+		45121A151F890358005FA14E /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45121A141F890358005FA14E /* Component.swift */; };
 		457B37D71F88706F00065474 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457B37D61F88706F00065474 /* Tools.swift */; };
 		457B37D91F88731C00065474 /* SelectionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457B37D81F88731C00065474 /* SelectionSort.swift */; };
 		457B37DB1F88734500065474 /* InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457B37DA1F88734500065474 /* InsertionSort.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		45121A121F88FF52005FA14E /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		45121A141F890358005FA14E /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
 		457B37D61F88706F00065474 /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		457B37D81F88731C00065474 /* SelectionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionSort.swift; sourceTree = "<group>"; };
 		457B37DA1F88734500065474 /* InsertionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionSort.swift; sourceTree = "<group>"; };
@@ -65,8 +69,10 @@
 		457B37EA1F88816800065474 /* GraphTheory */ = {
 			isa = PBXGroup;
 			children = (
+				45121A121F88FF52005FA14E /* Graph.swift */,
 				457B37EB1F88A7E800065474 /* DenseGraph.swift */,
 				457B37ED1F88A7FD00065474 /* SparseGraph.swift */,
+				45121A141F890358005FA14E /* Component.swift */,
 			);
 			path = GraphTheory;
 			sourceTree = "<group>";
@@ -166,7 +172,9 @@
 			files = (
 				45F909DA1F7E4397002B7637 /* main.swift in Sources */,
 				457B37E31F88779300065474 /* IndexMaxHeap.swift in Sources */,
+				45121A131F88FF52005FA14E /* Graph.swift in Sources */,
 				457B37E51F8877B800065474 /* BinarySearch.swift in Sources */,
+				45121A151F890358005FA14E /* Component.swift in Sources */,
 				457B37E91F88785200065474 /* UnionFind.swift in Sources */,
 				457B37DF1F88773000065474 /* QuickSort.swift in Sources */,
 				457B37E71F8877EF00065474 /* BinarySearchTree.swift in Sources */,
