@@ -47,9 +47,7 @@ class MaxHeap<T:Comparable> {
         var k = count
         while k > 1 && data[k] > data[k / 2] {
             data.swapAt(k / 2, k)
-            
             k /= 2
-            
         }
     }
     

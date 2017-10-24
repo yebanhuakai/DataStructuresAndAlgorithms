@@ -1,4 +1,4 @@
-//
+-1//
 //  main.swift
 //  DataStructuresAndAlgorithms
 //
@@ -93,20 +93,24 @@ print(mergeArr2[0...14])
 
 //------------------------------♨️---------------------------------//
 //QuickSort
-#if false
+#if true
 
-var quick3Arr = randomNearlyOrderArr(count: count1_000_000, swapTimes: 10)
-var quick3Arr1 = quick3Arr
-var quick3Arr2 = quick3Arr
-var quick3Arr3 = quick3Arr
+//var quick3Arr = randomNearlyOrderArr(count: count1_000_000, swapTimes: 10)
+//var quick3Arr1 = quick3Arr
+//var quick3Arr2 = quick3Arr
+//var quick3Arr3 = quick3Arr
+//var quick3Arr4 = quick3Arr
 
-timeClac(fn: quickSort(arr:), arr: &quick3Arr1, funcName: "QuickSort ")
-print(quick3Arr1[0...49])
-timeClac(fn: quickSort3Way(arr:), arr: &quick3Arr2, funcName: "Quick3Sort ")
-print(quick3Arr2[0...49])
-timeClac(fn: mergeSort(arr:), arr: &quick3Arr3, funcName: "MergeSort ")
-print(quick3Arr3[0...49])
-
+//timeClac(fn: quickSort(arr:), arr: &quick3Arr1, funcName: "QuickSort ")
+//print(quick3Arr1[0...49])
+//timeClac(fn: quickSort3Way(arr:), arr: &quick3Arr2, funcName: "Quick3Sort ")
+//print(quick3Arr2[0...49])
+//timeClac(fn: mergeSort(arr:), arr: &quick3Arr3, funcName: "MergeSort ")
+//print(quick3Arr3[0...49])
+var quick3Arr4 = [3,1,2,7,5,6,4]
+    
+let p = kthBigestElement(arr: &quick3Arr4, k: 2)
+print(p ?? -1)
 #endif
 
 //------------------------------♨️---------------------------------//
@@ -292,7 +296,7 @@ print("component2.count:", component2.count())
 #endif
 
 //DFS vs BFS
-#if true
+#if false
     
 let sparseGraph = SparseGraph(n: 7, directed: false)
 for tuple in G2 {
