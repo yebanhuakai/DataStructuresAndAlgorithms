@@ -41,7 +41,7 @@ func __mergeSort<T:Comparable>(arr:inout [T], l:Int, r:Int) { //[1,4,3,2]
     //        return
     //    }
     
-    let mid = (l + r) / 2 //未防止溢出
+    let mid = l + (r - l) / 2
     
     __mergeSort(arr: &arr, l: l, r: mid) //0, 1
     __mergeSort(arr: &arr, l: mid + 1, r: r) // 2,3
