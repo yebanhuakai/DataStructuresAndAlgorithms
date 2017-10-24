@@ -93,24 +93,25 @@ print(mergeArr2[0...14])
 
 //------------------------------♨️---------------------------------//
 //QuickSort
-#if true
+#if false
 
-//var quick3Arr = randomNearlyOrderArr(count: count1_000_000, swapTimes: 10)
-//var quick3Arr1 = quick3Arr
-//var quick3Arr2 = quick3Arr
-//var quick3Arr3 = quick3Arr
-//var quick3Arr4 = quick3Arr
+var quick3Arr = randomNearlyOrderArr(count: count1_000_000, swapTimes: 10)
+var quick3Arr1 = quick3Arr
+var quick3Arr2 = quick3Arr
+var quick3Arr3 = quick3Arr
 
-//timeClac(fn: quickSort(arr:), arr: &quick3Arr1, funcName: "QuickSort ")
-//print(quick3Arr1[0...49])
-//timeClac(fn: quickSort3Way(arr:), arr: &quick3Arr2, funcName: "Quick3Sort ")
-//print(quick3Arr2[0...49])
-//timeClac(fn: mergeSort(arr:), arr: &quick3Arr3, funcName: "MergeSort ")
-//print(quick3Arr3[0...49])
-var quick3Arr4 = [3,1,2,7,5,6,4]
+timeClac(fn: quickSort(arr:), arr: &quick3Arr1, funcName: "QuickSort ")
+print(quick3Arr1[0...49])
+timeClac(fn: quickSort3Way(arr:), arr: &quick3Arr2, funcName: "Quick3Sort ")
+print(quick3Arr2[0...49])
+timeClac(fn: mergeSort(arr:), arr: &quick3Arr3, funcName: "MergeSort ")
+print(quick3Arr3[0...49])
     
-let p = kthBigestElement(arr: &quick3Arr4, k: 2)
-print(p ?? -1)
+//kth bigest element
+var quick3Arr4 = [3,1,2,7,5,6,4]
+let k = 2
+let p = kthBigestElement(arr: &quick3Arr4, k: k)
+print("The \(k)th bigest element is:", p ?? -1)
 #endif
 
 //------------------------------♨️---------------------------------//
