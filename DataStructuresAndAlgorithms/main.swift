@@ -1,4 +1,4 @@
--1//
+//
 //  main.swift
 //  DataStructuresAndAlgorithms
 //
@@ -311,5 +311,19 @@ path?.showPath(w: 6)
 let shortestPath = ShortestPath(G: sparseGraph, source: 0)
 shortestPath?.showPath(w: 6)
     
+#endif
+
+//------------------------------♨️---------------------------------//
+//LeetCode
+
+//209
+#if false
+
+let arr = [2,3,1,2,4,3]
+    
+let res = minSubArrayLen(arr: arr, s: 7)
+    
+print(res)
+
 #endif
 

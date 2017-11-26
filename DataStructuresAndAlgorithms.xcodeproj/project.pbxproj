@@ -23,6 +23,7 @@
 		457B37E91F88785200065474 /* UnionFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457B37E81F88785200065474 /* UnionFind.swift */; };
 		457B37EC1F88A7E800065474 /* DenseGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457B37EB1F88A7E800065474 /* DenseGraph.swift */; };
 		457B37EE1F88A7FD00065474 /* SparseGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457B37ED1F88A7FD00065474 /* SparseGraph.swift */; };
+		45D49BC41FCAC8B0005CF20C /* MinSubArrayLen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D49BC31FCAC8B0005CF20C /* MinSubArrayLen.swift */; };
 		45F909DA1F7E4397002B7637 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F909D91F7E4397002B7637 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		457B37E81F88785200065474 /* UnionFind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionFind.swift; sourceTree = "<group>"; };
 		457B37EB1F88A7E800065474 /* DenseGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DenseGraph.swift; sourceTree = "<group>"; };
 		457B37ED1F88A7FD00065474 /* SparseGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparseGraph.swift; sourceTree = "<group>"; };
+		45D49BC31FCAC8B0005CF20C /* MinSubArrayLen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinSubArrayLen.swift; sourceTree = "<group>"; };
 		45F909D61F7E4397002B7637 /* DataStructuresAndAlgorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructuresAndAlgorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		45F909D91F7E4397002B7637 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +83,14 @@
 				45121A181F891C4A005FA14E /* ShortestPath.swift */,
 			);
 			path = GraphTheory;
+			sourceTree = "<group>";
+		};
+		45D49BC21FCAC885005CF20C /* Litcode */ = {
+			isa = PBXGroup;
+			children = (
+				45D49BC31FCAC8B0005CF20C /* MinSubArrayLen.swift */,
+			);
+			path = Litcode;
 			sourceTree = "<group>";
 		};
 		45F909CD1F7E4397002B7637 = {
@@ -114,6 +124,7 @@
 				457B37E61F8877EF00065474 /* BinarySearchTree.swift */,
 				457B37E81F88785200065474 /* UnionFind.swift */,
 				457B37EA1F88816800065474 /* GraphTheory */,
+				45D49BC21FCAC885005CF20C /* Litcode */,
 			);
 			path = DataStructuresAndAlgorithms;
 			sourceTree = "<group>";
@@ -177,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45F909DA1F7E4397002B7637 /* main.swift in Sources */,
+				45D49BC41FCAC8B0005CF20C /* MinSubArrayLen.swift in Sources */,
 				457B37E31F88779300065474 /* IndexMaxHeap.swift in Sources */,
 				45121A191F891C4A005FA14E /* ShortestPath.swift in Sources */,
 				45121A171F890D5D005FA14E /* Path.swift in Sources */,
