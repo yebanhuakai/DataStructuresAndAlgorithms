@@ -24,6 +24,7 @@
 		457B37EC1F88A7E800065474 /* DenseGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457B37EB1F88A7E800065474 /* DenseGraph.swift */; };
 		457B37EE1F88A7FD00065474 /* SparseGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457B37ED1F88A7FD00065474 /* SparseGraph.swift */; };
 		45D49BC41FCAC8B0005CF20C /* MinSubArrayLen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D49BC31FCAC8B0005CF20C /* MinSubArrayLen.swift */; };
+		45D49BCA1FCD1396005CF20C /* BubbleSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D49BC91FCD1396005CF20C /* BubbleSort.swift */; };
 		45F909DA1F7E4397002B7637 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F909D91F7E4397002B7637 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		457B37EB1F88A7E800065474 /* DenseGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DenseGraph.swift; sourceTree = "<group>"; };
 		457B37ED1F88A7FD00065474 /* SparseGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparseGraph.swift; sourceTree = "<group>"; };
 		45D49BC31FCAC8B0005CF20C /* MinSubArrayLen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinSubArrayLen.swift; sourceTree = "<group>"; };
+		45D49BC91FCD1396005CF20C /* BubbleSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSort.swift; sourceTree = "<group>"; };
 		45F909D61F7E4397002B7637 /* DataStructuresAndAlgorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructuresAndAlgorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		45F909D91F7E4397002B7637 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +117,7 @@
 				45F909D91F7E4397002B7637 /* main.swift */,
 				457B37D61F88706F00065474 /* Tools.swift */,
 				457B37D81F88731C00065474 /* SelectionSort.swift */,
+				45D49BC91FCD1396005CF20C /* BubbleSort.swift */,
 				457B37DA1F88734500065474 /* InsertionSort.swift */,
 				457B37DC1F88771600065474 /* MergeSort.swift */,
 				457B37DE1F88773000065474 /* QuickSort.swift */,
@@ -199,6 +202,7 @@
 				457B37DF1F88773000065474 /* QuickSort.swift in Sources */,
 				457B37E71F8877EF00065474 /* BinarySearchTree.swift in Sources */,
 				457B37DB1F88734500065474 /* InsertionSort.swift in Sources */,
+				45D49BCA1FCD1396005CF20C /* BubbleSort.swift in Sources */,
 				457B37D91F88731C00065474 /* SelectionSort.swift in Sources */,
 				457B37EC1F88A7E800065474 /* DenseGraph.swift in Sources */,
 				457B37EE1F88A7FD00065474 /* SparseGraph.swift in Sources */,

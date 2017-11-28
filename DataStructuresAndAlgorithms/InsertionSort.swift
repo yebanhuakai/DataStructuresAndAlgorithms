@@ -8,7 +8,7 @@
 
 import Foundation
 
-// MARK: - 插入排序：如果后面的比前面的小，就把大于后面的全部后移，最后将其拿到前面
+// MARK: - 插入排序：将比当前检查元素大的元素后移，直到遇到比当前检查元素小的，最后把当前元素插入
 func insertionSort<T:Comparable>(arr:inout [T]) {
     
     for i in 1..<arr.count { //注意从1开始

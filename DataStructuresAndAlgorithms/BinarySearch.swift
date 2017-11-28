@@ -17,9 +17,7 @@ func binarySearch<T:Comparable>(arr:[T], n:Int, target:T) -> Int {
         
         if arr[mid] == target {
             return mid
-        }
-        
-        if target < arr[mid] {
+        } else if target < arr[mid] {
             r = mid - 1
         } else {
             l = mid + 1
