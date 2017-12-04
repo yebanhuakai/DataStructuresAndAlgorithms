@@ -8,7 +8,7 @@
 
 import Foundation
 
-// MARK: - 排序算法-选择排序：挑选剩余数组里最小的放到前面
+// MARK: - 选择排序：挑选剩余数组里最小的放到前面
 func selectionSort<T:Comparable>(arr:inout [T]) { //泛型排序
     
     for i in 0..<arr.count {

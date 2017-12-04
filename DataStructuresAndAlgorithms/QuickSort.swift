@@ -13,11 +13,6 @@ func quickSort<T:Comparable>(arr:inout [T]) {
     __quickSort(arr: &arr, l: 0, r: arr.count - 1)
 }
 
-// 求无序数组第几大元素
-func kthBigestElement<T:Comparable>(arr:inout [T], k:Int) -> T? {
-    return __KthBigestElement(arr: &arr, l: 0, r: arr.count-1, k: arr.count - k)
-}
-
 private func __quickSort<T:Comparable>(arr:inout [T], l:Int, r:Int) {
     
     guard l < r else {
@@ -32,23 +27,6 @@ private func __quickSort<T:Comparable>(arr:inout [T], l:Int, r:Int) {
     let p = __partion2(arr: &arr, l: l, r: r) //用于拆分位置
     __quickSort(arr: &arr, l: l, r: p-1)
     __quickSort(arr: &arr, l: p+1, r: r)
-}
-
-//返回指定的第几大元素。例：[3,4,2,1,6,7,5],第二大元素为6,k=2
-private func __KthBigestElement<T:Comparable>(arr:inout [T], l:Int, r:Int, k:Int) -> T? {
-    guard l < r else {
-        return nil
-    }
-    
-    let p = __partion2(arr: &arr, l: l, r: r) //用于拆分位置
-    
-    if k == p {
-        return arr[p]
-    } else if k < p {
-        return __KthBigestElement(arr: &arr, l: l, r: p-1, k: k)
-    } else {
-        return __KthBigestElement(arr: &arr, l: p+1, r: r, k: k)
-    }
 }
 
 //对arr[l...r]部分进行partition操作
@@ -93,16 +71,30 @@ private func __partion2<T:Comparable>(arr:inout [T], l:Int, r:Int) -> Int {
     return j
 }
 
-//var quickArr = randomArr(count: count1_000_000, rangeL: 0, rangeR: count1_000_000)
-//var quickArr = randomNearlyOrderArr(count: count1_000_000, swapTimes: 100)
-//var quickArr1 = quickArr
-//var quickArr2 = quickArr
-//
-//timeClac(fn: quickSort(arr:), arr: &quickArr1, funcName: "QuickSort ") //快速排序对于近乎有序的排序较慢，对大量随机的则能高效排序
-//print(quickArr1[0...49])
-//timeClac(fn: mergeSort(arr:), arr: &quickArr2, funcName: "MergeSort ") //对于少量数据，优势不明显
-//print(quickArr2[0...49])
+//--------------------------------------------------------------------------------
+// 求无序数组第几大元素
+func kthBigestElement<T:Comparable>(arr:inout [T], k:Int) -> T? {
+    return __KthBigestElement(arr: &arr, l: 0, r: arr.count-1, k: arr.count - k)
+}
 
+//返回指定的第几大元素。例：[3,4,2,1,6,7,5],第二大元素为6,k=2
+private func __KthBigestElement<T:Comparable>(arr:inout [T], l:Int, r:Int, k:Int) -> T? {
+    guard l < r else {
+        return nil
+    }
+    
+    let p = __partion2(arr: &arr, l: l, r: r) //用于拆分位置
+    
+    if k == p {
+        return arr[p]
+    } else if k < p {
+        return __KthBigestElement(arr: &arr, l: l, r: p-1, k: k)
+    } else {
+        return __KthBigestElement(arr: &arr, l: p+1, r: r, k: k)
+    }
+}
+
+//--------------------------------------------------------------------------------
 //快速三路排序算法
 func quickSort3Way<T:Comparable>(arr:inout [T]) {
     __quickSort3Way(arr: &arr, l: 0, r: arr.count - 1)
