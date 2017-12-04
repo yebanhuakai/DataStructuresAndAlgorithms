@@ -327,7 +327,3 @@ print(res)
 
 #endif
 
-var arr = randomArr(count: 100, rangeL: 0, rangeR: 1_000)
-
-//print(bubbleSort(arr: &arr))
-print(insertionSortTest(arr: &arr))

@@ -146,5 +146,4 @@ private func __quickSort3Way<T:Comparable>(arr:inout [T], l:Int, r:Int) {
     __quickSort3Way(arr: &arr, l: gt, r: r)
 }
 
-//逆序对 ⭐️作业 （归并算法）
 //第n大元素 ⭐️作业 （快速排序算法）

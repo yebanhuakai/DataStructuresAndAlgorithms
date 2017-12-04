@@ -45,6 +45,18 @@ func randomNearlyOrderArr(count:Int, swapTimes:Int) -> [Int] {
     return arr
 }
 
+//生成指定长度有序数组
+func orderedArray(count:Int) -> [Int] {
+    
+    var arr = Array(repeating: 0, count: count)
+    
+    for i in 1...count {
+        arr[i-1] = i
+    }
+    
+    return arr
+}
+
 //包装泛型函数的高阶函数，用于打印时间
 func timeClac<T:Comparable>(fn:(inout [T])->(), arr:inout [T], funcName:String) {
     let timeStart = Date()
